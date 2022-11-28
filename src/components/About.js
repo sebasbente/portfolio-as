@@ -48,7 +48,7 @@ const About = ({title, dark, id}) => {
 
 const useStyles = makeStyles((theme)=> ({
     section: {
-        minHeight: "100vh",  
+        minHeight: "120vh",  
     },
     sectiondark: {
         background: "#333",
@@ -71,18 +71,27 @@ const useStyles = makeStyles((theme)=> ({
         borderRadius: "10px",
         margin: theme.spacing(5),
     },
+    cardcontent: {
+        marginTop: theme.spacing(2),
+        "& h6": {
+            marginTop: theme.spacing(6),
+            [theme.breakpoints.down("sm")]: {
+                display: "none",
+            },
+        },
+    },
     pdfbutton: {
         position: "absolute",
         bottom: "5rem",
-        rigth: "4rem",
+        right: "4rem",
         [theme.breakpoints.down("sm")]: {
-            bottom: "2rem",
+            bottom: "2.6rem",
             rigth: "1rem",
         },
         backgroundColor: "tomato",
         padding: theme.spacing(3),
         "&:hover": {
-            backgroundColor: "#fff",
+            backgroundColor: "#333",
         },
         "& a": {
             color: "#fff",
