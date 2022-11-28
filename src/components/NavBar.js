@@ -20,7 +20,7 @@ import CancelIcon from "@material-ui/icons/Cancel";
 
 const NavBar = () => {
     const classes = useStyles();
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     const links = [
         {
             id: "about",
