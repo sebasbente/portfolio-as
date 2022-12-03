@@ -107,6 +107,7 @@ const NavBar = () => {
 const useStyles = makeStyles((theme)=> ({
     root: {
         backgroundColor: "#fafafa",
+        opacity: 0.8,
         top: 0,
         right: 0,
         left: 0,
