@@ -1,6 +1,6 @@
 import { AppBar, Divider, Drawer, IconButton, List, ListItem, ListItemIcon, makeStyles, Toolbar } from "@material-ui/core";
 import React, { useState } from "react";
-import logo from "./images/full-stack.png"
+import logo from "./images/codigo.png"
 import { Link, animateScroll as scroll } from "react-scroll";
 
 //import InfoTwoToneIcon from "@material-ui/icons/InfoTwoTone";
