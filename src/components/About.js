@@ -22,7 +22,7 @@ const About = ({title, dark, id}) => {
                             typeSpeed={100}
                         />
                         <TypeWriterEffect 
-                            text="And am an awesome Full Stack Developer"
+                            text="And am a Full Stack Developer"
                             textStyle={{fontSize: "1.2rem", fontWeight: "500px", color: "black"}}
                             startDelay={2500}
                             cursorColor="black"
@@ -48,7 +48,11 @@ const About = ({title, dark, id}) => {
 
 const useStyles = makeStyles((theme)=> ({
     section: {
-        minHeight: "120vh",  
+        minHeight: "120vh",
+        [theme.breakpoints.down("sm")]: {
+            minHeight: "80vh",
+        },
+        
     },
     sectiondark: {
         background: "#333",
@@ -56,12 +60,12 @@ const useStyles = makeStyles((theme)=> ({
     },
     sectioncontent: {
         maxWidth: "80vw",
-        margin: "0 auto",
+        margin: "auto",
     },
     card: {
-        height: "70vw",
+        height: "60vw",
         display: "flex",
-        marginTop: theme.spacing(6),
+        marginTop: theme.spacing(2),
         position: "relative",
     },
     media: {

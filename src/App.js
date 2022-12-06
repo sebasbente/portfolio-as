@@ -22,9 +22,9 @@ function App() {
       <div className={"classes.root"}>
       <NavBar/>
       <About title= "About Me" id="about" dark={true } />
-      <Skills title= "My Coding Journey" id= "skills" dark={false } />
+      <Skills title= "Skills" id= "skills" dark={false } />
       <MyWork title= "My Work" id="work" dark={true } />
-      <Contact title= "Get in touch" id="contact" dark={false } />
+      <Contact title= "Contact" id="contact" dark={false } />
     </div>
     </MuiThemeProvider>
   );

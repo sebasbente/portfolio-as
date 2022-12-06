@@ -40,7 +40,7 @@ const NavBar = () => {
         },
         {
             id: "contact",
-            text: "Get in touch",
+            text: "Contact",
             icon: <ContactMailTwoToneIcon fontSize="large"/>
         },
     ]
