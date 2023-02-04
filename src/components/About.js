@@ -18,18 +18,29 @@ const About = ({title, dark, id}) => {
                             text="Hi, I am Sebastián Bente"
                             textStyle={{fontSize: "2rem", fontWeight: "700px", color: "tomato"}}
                             startDelay={100}
-                            cursorColor="black"
+                            cursorColor="tomato"
                             typeSpeed={100}
                         />
+                        <Typography variant="h6" color="#fff">
+                         
+                        </Typography>
                         <TypeWriterEffect 
                             text="And am a Full Stack Developer"
                             textStyle={{fontSize: "1.2rem", fontWeight: "500px", color: "black"}}
-                            startDelay={2500}
+                            startDelay={3500}
                             cursorColor="black"
                             typeSpeed={100}
                         />
                         <Typography variant="h6" color="textSecondary">
-                            escribir descripcion
+                        <TypeWriterEffect 
+                            text="I am also an educator. I am passionate about being part of projects that challenge me to continue learning and building with others.
+                            I believe that I can channel and deploy in the world of programming many of the skills acquired in my teaching practice.
+                            I am looking for a space that allows me to put my skills into practice and continue to develop myself both professionally and at work."
+                            textStyle={{fontSize: "1.2rem", fontWeight: "300px", color: "#333"}}
+                            startDelay={7000}
+                            cursorColor="#333"
+                            typeSpeed={60}
+                        />
                         </Typography>
                     </CardContent>
                     <CardActions>
@@ -48,7 +59,10 @@ const About = ({title, dark, id}) => {
 
 const useStyles = makeStyles((theme)=> ({
     section: {
-        minHeight: "120vh",
+        minHeight: "160vh",
+        [theme.breakpoints.down("md")]: {
+            minHeight: "120vh",
+        },
         [theme.breakpoints.down("sm")]: {
             minHeight: "80vh",
         },
@@ -60,7 +74,7 @@ const useStyles = makeStyles((theme)=> ({
     },
     sectioncontent: {
         maxWidth: "80vw",
-        margin: "auto",
+        margin: "0 auto",
     },
     card: {
         height: "60vw",
@@ -69,8 +83,11 @@ const useStyles = makeStyles((theme)=> ({
         position: "relative",
     },
     media: {
-        width: "250px",
         height: "auto",
+        minWidth: "250px",
+        [theme.breakpoints.down("sm")]: {
+            minWidth: "100px",
+        },
         objectFit: "cover",
         borderRadius: "10px",
         margin: theme.spacing(5),
@@ -78,7 +95,7 @@ const useStyles = makeStyles((theme)=> ({
     cardcontent: {
         marginTop: theme.spacing(2),
         "& h6": {
-            marginTop: theme.spacing(6),
+            marginTop: theme.spacing(3),
             [theme.breakpoints.down("sm")]: {
                 display: "none",
             },
